@@ -4,12 +4,11 @@ import numpy as np
 import face_recognition
 import os
 from datetime import datetime
-import time
 from PIL import ImageTk, Image
 # from PIL import ImageGrab
 
-
 def face():
+    os.chdir("C:\\Users\\pkh\\Desktop\\객체지향 파이썬 코딩\\project")
     path = 'image'
     images = []
     classNames = []
@@ -59,7 +58,6 @@ def face():
                 encodeListKnown, encodeFace)
             faceDis = face_recognition.face_distance(
                 encodeListKnown, encodeFace)
-
             matchIndex = np.argmin(faceDis)
 
             if matches[matchIndex]:
@@ -80,7 +78,7 @@ def face():
     cap.release()
     cv2.destroyAllWindows()
 
-    os.chdir("resume")
+    os.chdir("C:\\Users\\pkh\\Desktop\\객체지향 파이썬 코딩\\project\\resume")
     image = Image.open(f'{name}.jpg')
     image.show()
     time.sleep(1)
