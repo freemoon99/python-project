@@ -4,6 +4,7 @@ import tkinter as tk
 from tksheet import Sheet
 import pandas as pd
 import os
+
 os.chdir("C:\\Users\\pkh\\Desktop\\객체지향 파이썬 코딩\\project")
 class demo(tk.Tk):
     def __init__(self):
@@ -16,8 +17,7 @@ class demo(tk.Tk):
         self.sheet = Sheet(
             self.frame,
             data=pd.read_csv(
-                "person.csv",  # 엑셀파일 이름
-            ).values.tolist(),
+                "person.csv", names=['Name', 'Time']).values.tolist(),
         )
         self.sheet.enable_bindings()
         self.frame.grid(row=0, column=0, sticky="nswe")

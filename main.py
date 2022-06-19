@@ -9,6 +9,7 @@ path = os.getcwd()
 print(path)
 #os.chdir("../")  # 경로를 한단계 이전으로
 def calling():
+        os.chdir("C:\\Users\\pkh\\Desktop\\객체지향 파이썬 코딩\\project\\resume")
         while True:
             name = entry.get() #입력받은 문자를 name으로 받음
             image = Image.open(f'{name}.jpg') #name 문자를 받아서 이미 출력
