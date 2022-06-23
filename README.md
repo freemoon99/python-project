@@ -7,3 +7,6 @@ opencv를 이용한 면접 체크 프로그램
 2. csv 파일에 접근하여 출력
 3. 폴더에 접근하여 파일 옮기기 가능
 4. entry에 입려된 이름과 동일한 이력서를 띄어줌
+
+
+![캡처](https://user-images.githubusercontent.com/102667851/174484661-40fd44c4-c141-4f90-8b9b-37606db7b502.PNG)
